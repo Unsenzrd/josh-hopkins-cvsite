@@ -1,7 +1,7 @@
 /* ===== Reset & base ===== */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: "Cormorant Garamond", Georgia, serif;
   color: var(--ink);
@@ -10,7 +10,6 @@ body {
     radial-gradient(1000px 700px at 10% -8%, var(--wash1), transparent 60%),
     radial-gradient(900px 680px at 94% 106%, var(--wash2), transparent 55%);
   min-height: 100vh;
-  overflow-x: clip;
   position: relative;
   transition: background-color 0.25s;
 }
@@ -94,7 +93,7 @@ h3 {
 }
 
 /* ===== Layout helpers ===== */
-main, header.nav, footer.contact-section {
+main, footer.contact-section {
   position: relative;
   z-index: 2;
 }
