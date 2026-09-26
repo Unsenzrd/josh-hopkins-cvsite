@@ -1,0 +1,138 @@
+{
+  "title": "Engineering notebook: choose the page's working grammar",
+  "question": "You already pinned the world: off-white or near-black, a contemporary sans with a mono for figures, and sage as the only accent. These cards decide the structure it's built from. Keep the roll, take my pick, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Press proof sheet",
+      "kicker": "THE ROLL",
+      "lineage": "print-manufacturing press proofs: crop marks, slug line, colour bar, sign-off",
+      "thesis": "The CV presented as a signed-off proof from the print and manufacturing world Josh builds software for.",
+      "palette": ["#f4f4f1", "#161816", "#4f6b53", "#a9c4ab"],
+      "materials": ["hairline crop and registration marks", "mono slug line", "sage step-wedge colour bar"],
+      "viewport": "Name and role inside hairline crop marks; a mono slug line (name · CV · updated Sep 2026); the animated strip sits where a press colour bar would, carrying the 3-item proof strip; Email me and LinkedIn below.",
+      "risk": "Could read as a print designer's portfolio, and it ties the identity to CPI's industry rather than to Josh.",
+      "raised": [
+        {"from": "challenger-gameboy", "raise": "Exactly four tones per theme; no fifth colour anywhere."},
+        {"from": "challenger-plankton", "raise": "The animated strip rests when idle, wakes under the pointer, then fades back."},
+        {"from": "challenger-hypercard", "raise": "Every role is deep-linkable, and the nav shows the active section."},
+        {"from": "challenger-teenquiz", "raise": "The close is a real destination: a sign-off block, not a footer afterthought."},
+        {"from": "challenger-clay", "raise": "Every text block has a set line length (about 68 characters maximum)."}
+      ],
+      "wireframe": {"cols":12,"rows":10,"regions":[
+        {"label":"slug line","x":0,"y":0,"w":12,"h":1},
+        {"label":"name · role · line","x":0,"y":1,"w":8,"h":3,"accent":true},
+        {"label":"portrait","x":9,"y":1,"w":3,"h":3},
+        {"label":"colour-bar strip: 3 proofs","x":0,"y":4,"w":12,"h":2,"accent":true},
+        {"label":"experience","x":0,"y":6,"w":12,"h":4}
+      ]}
+    },
+    {
+      "id": "model-pick",
+      "label": "Drawing title block and revision table",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "ISO engineering-drawing title blocks and revision tables",
+      "thesis": "Career as a revision history, and Drawn → Checked → Approved as a leader who still builds.",
+      "palette": ["#f4f4f1", "#161816", "#4f6b53", "#a9c4ab"],
+      "materials": ["ruled title-block cells", "mono field labels", "revision table rows"],
+      "viewport": "The hero is a ruled title block: Name / Role / Org / Location / Rev cells beside the portrait; the proof strip sits on the animated band as the drawing's key figures; below, a revision table runs from Sep 2017 to Manager in May 2025.",
+      "risk": "My top-ranked candidate, and literal field labels can tip into costume if they're overdone.",
+      "wireframe": {"cols":12,"rows":10,"regions":[
+        {"label":"title block cells","x":0,"y":0,"w":8,"h":4,"accent":true},
+        {"label":"portrait","x":8,"y":0,"w":4,"h":4},
+        {"label":"animated band: 3 proofs","x":0,"y":4,"w":12,"h":2,"accent":true},
+        {"label":"revision table","x":0,"y":6,"w":12,"h":4}
+      ]}
+    },
+    {
+      "id": "challenger-gameboy",
+      "label": "Four-shade handheld field",
+      "verdict": "declined",
+      "lineage": "Game Boy DMG four-green display",
+      "thesis": "Everything in exactly four tones.",
+      "palette": ["#9bbc0f", "#8bac0f", "#306230", "#0f380f"],
+      "materials": ["8x8 tile grid", "dither"],
+      "viewport": "A 160x144 framed field with the CV as tile text.",
+      "case": "Loses on both axes: senior hiring readers see a novelty, and the pixel type hurts clarity.",
+      "risk": "Reads as a gimmick.",
+      "kept": "Total palette discipline: four tones, no fifth."
+    },
+    {
+      "id": "challenger-teenquiz",
+      "label": "Teen-magazine quiz spread",
+      "verdict": "declined",
+      "lineage": "1990s magazine quizzes",
+      "thesis": "A quiz that ends in a verdict box.",
+      "palette": ["#ffffff", "#ff3d9a", "#b6ff3b"],
+      "materials": ["halftone collage", "gel-pen ink"],
+      "viewport": "Collaged columns running down to a verdict box.",
+      "case": "Loses on both axes: the tone is wrong for the audience.",
+      "risk": "Unserious.",
+      "kept": "The close is a destination, not a footer."
+    },
+    {
+      "id": "challenger-plankton",
+      "label": "Bioluminescent wake",
+      "verdict": "declined",
+      "lineage": "night-sea plankton light",
+      "thesis": "Light that answers motion, then fades.",
+      "palette": ["#02060c", "#1f7aff", "#6fe7ff"],
+      "materials": ["particle trails"],
+      "viewport": "A dark field lit by pointer wakes.",
+      "case": "Loses on both axes: it's atmosphere, not proof.",
+      "risk": "Decoration over content.",
+      "kept": "Motion is a response that returns to rest."
+    },
+    {
+      "id": "challenger-clay",
+      "label": "Coiled earth tower",
+      "verdict": "declined",
+      "lineage": "coil-built earthen architecture",
+      "thesis": "Courses rising one on another.",
+      "palette": ["#b5562f", "#6b3d24", "#efe4d4"],
+      "materials": ["coil bands", "slip seams"],
+      "viewport": "Horizontal text courses rising up the page.",
+      "case": "Loses on both axes: there's no link to Josh's world.",
+      "risk": "Unrelated to the subject.",
+      "kept": "Every line length is set on purpose."
+    },
+    {
+      "id": "challenger-hypercard",
+      "label": "HyperCard stack",
+      "verdict": "declined",
+      "lineage": "1987 HyperCard stacks",
+      "thesis": "Linked cards that you read and edit in the same place.",
+      "palette": ["#ffffff", "#000000"],
+      "materials": ["one-bit dither", "painted buttons"],
+      "viewport": "Fixed cards linked by buttons.",
+      "case": "Loses on both axes: nostalgia over clarity for recruiters.",
+      "risk": "Retro novelty.",
+      "kept": "Every card is addressable; back retraces your path."
+    },
+    {
+      "id": "challenger-darkroom",
+      "label": "Darkroom safelight bay",
+      "verdict": "declined",
+      "lineage": "photographic darkrooms",
+      "thesis": "Images emerging station by station.",
+      "palette": ["#c8741a", "#1a1410", "#8a8a86"],
+      "materials": ["amber wash", "test strips"],
+      "viewport": "Stations running in fixed order under amber light.",
+      "case": "Loses on both axes: the palette breaks your pinned world and the metaphor is unrelated.",
+      "risk": "Off-subject.",
+      "kept": "A fixed reading order: level first, then detail."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean single-column developer CV, executed impeccably.",
+    "palette": ["#ffffff", "#111827", "#4f6b53"],
+    "materials": ["clean grid", "portrait photo"],
+    "viewport": "Name, title, one line and buttons, with the portrait at the right; timeline below.",
+    "risk": "Hard to tell apart from every other engineer's site."
+  },
+  "steer": true
+}

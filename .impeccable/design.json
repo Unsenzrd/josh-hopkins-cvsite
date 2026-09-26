@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-26T20:00:00Z",
+  "title": "Design System: Josh Hopkins CV",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Proof Paper",
+        "canonical": "#f4f4f1",
+        "tonalRamp": [
+          "#1e1f1c",
+          "#3a3b37",
+          "#5a5b56",
+          "#7d7e79",
+          "#a3a49f",
+          "#c8c9c4",
+          "#e6e6e2",
+          "#f4f4f1"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "#161816",
+        "tonalRamp": [
+          "#0b0c0b",
+          "#161816",
+          "#2a2d2a",
+          "#434843",
+          "#5d635d",
+          "#858b85",
+          "#b4b8b3",
+          "#e0e2dd"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule Grey",
+        "canonical": "#5d635d",
+        "tonalRamp": [
+          "#1f221f",
+          "#343834",
+          "#4a4f4a",
+          "#5d635d",
+          "#7a807a",
+          "#9aa19a",
+          "#c0c5c0",
+          "#e3e6e3"
+        ]
+      },
+      "sage": {
+        "role": "primary",
+        "displayName": "Proof Sage",
+        "canonical": "#4f6b53",
+        "tonalRamp": [
+          "#1c2a1e",
+          "#2a3d2d",
+          "#3b533f",
+          "#4f6b53",
+          "#6b876f",
+          "#8ca590",
+          "#b3c8b5",
+          "#dde8de"
+        ]
+      },
+      "sage-pressed": {
+        "role": "primary",
+        "displayName": "Pressed Sage",
+        "canonical": "color-mix(in srgb, var(--sage) 86%, var(--ink))",
+        "tonalRamp": [
+          "#1c2a1e",
+          "#2a3d2d",
+          "#3b533f",
+          "#4f6b53",
+          "#6b876f",
+          "#8ca590",
+          "#b3c8b5",
+          "#dde8de"
+        ]
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Proof Paper (dark)",
+        "canonical": "#141614",
+        "tonalRamp": [
+          "#0b0c0b",
+          "#161816",
+          "#2a2d2a",
+          "#434843",
+          "#5d635d",
+          "#858b85",
+          "#b4b8b3",
+          "#e0e2dd"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Press Ink (dark)",
+        "canonical": "#e9ebe6",
+        "tonalRamp": [
+          "#1e1f1c",
+          "#3a3b37",
+          "#5a5b56",
+          "#7d7e79",
+          "#a3a49f",
+          "#c8c9c4",
+          "#e6e6e2",
+          "#f4f4f1"
+        ]
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Rule Grey (dark)",
+        "canonical": "#9aa19a",
+        "tonalRamp": [
+          "#1f221f",
+          "#343834",
+          "#4a4f4a",
+          "#5d635d",
+          "#7a807a",
+          "#9aa19a",
+          "#c0c5c0",
+          "#e3e6e3"
+        ]
+      },
+      "sage-dark": {
+        "role": "primary",
+        "displayName": "Proof Sage (dark)",
+        "canonical": "#a9c4ab",
+        "tonalRamp": [
+          "#1c2a1e",
+          "#2a3d2d",
+          "#3b533f",
+          "#4f6b53",
+          "#6b876f",
+          "#8ca590",
+          "#b3c8b5",
+          "#dde8de"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero name only, condensed to width 72."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Sign-off heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section heads; proof leads share the width at a smaller clamp."
+      },
+      "title-entry": {
+        "displayName": "Title Entry",
+        "purpose": "Role titles; the current role steps up to 1.625rem at width 84."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Role line, opened by the inline mono \"Now\" marker."
+      },
+      "body-large": {
+        "displayName": "Body Large",
+        "purpose": "Positioning paragraph and summary prose."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Lists, skills and education rows, and footnotes."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons; nav links use the same size at weight 500."
+      },
+      "monogram": {
+        "displayName": "Monogram",
+        "purpose": "The JH letters in the sage circle monogram only."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Dates, years, section meta and the footer update date, with tabular figures; \"Now\" and \"Based in Wiltshire, UK\" use the same size at weight 500."
+      },
+      "mono-slug": {
+        "displayName": "Mono Slug",
+        "purpose": "The slug line at the foot of the page only."
+      }
+    },
+    "derivedColors": [
+      {
+        "name": "hair",
+        "value": "color-mix(in srgb, var(--ink) 16%, transparent)",
+        "purpose": "Row dividers, nav border, section-body rule."
+      },
+      {
+        "name": "hair-strong",
+        "value": "color-mix(in srgb, var(--ink) 34%, transparent)",
+        "purpose": "Outline button border and theme-switch track border at rest (32% in dark)."
+      },
+      {
+        "name": "switch-track",
+        "value": "color-mix(in srgb, var(--ink) 8%, var(--paper)); checked: color-mix(in srgb, var(--sage) 22%, var(--paper))",
+        "purpose": "Theme-switch track fill only."
+      },
+      {
+        "name": "on-sage",
+        "value": "var(--paper)",
+        "purpose": "Text and mesh on the sage colour bar; monogram letters."
+      },
+      {
+        "name": "print-sage",
+        "value": "#3d5540",
+        "purpose": "Sage override for print only."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "switch-thumb",
+        "value": "0 1px 3px color-mix(in srgb, var(--ink) 28%, transparent)",
+        "purpose": "Theme-switch thumb only; the one shadow in the system."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state transitions."
+      },
+      {
+        "name": "state",
+        "value": "0.18s",
+        "purpose": "Button and nav colour transitions."
+      },
+      {
+        "name": "press",
+        "value": "translateY(1px)",
+        "purpose": "Button :active."
+      },
+      {
+        "name": "switch-slide",
+        "value": "transform 0.3s; colours 0.25s; thumb translateX(32px)",
+        "purpose": "Theme-switch thumb and track; removed under reduced motion."
+      },
+      {
+        "name": "mesh",
+        "value": "canvas; drifts at rest with a wandering ghost focus that lights nearby links, wakes under a fine pointer (brighter links, faster drift, parallax), settles slowly after pointerleave",
+        "purpose": "The one ambient moment; static under reduced motion. There is no load motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "960px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      },
+      {
+        "name": "phone",
+        "value": "480px"
+      },
+      {
+        "name": "narrow",
+        "value": "380px"
+      },
+      {
+        "name": "print",
+        "value": "print"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid sage action; the only filled button, used for Email me (hero, sign-off) and Get in touch (nav, small).",
+      "html": "<a href=\"#\" class=\"ds-btn ds-btn-solid\">Email me</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid var(--sage, #4f6b53);border-radius:2px;font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);font-size:0.9375rem;font-weight:600;letter-spacing:0.01em;line-height:1;text-decoration:none;cursor:pointer;transition:background-color .18s cubic-bezier(0.16, 1, 0.3, 1),color .18s cubic-bezier(0.16, 1, 0.3, 1),border-color .18s cubic-bezier(0.16, 1, 0.3, 1);} .ds-btn-solid{background:var(--sage, #4f6b53);color:var(--paper, #f4f4f1);} .ds-btn-solid:hover{background:color-mix(in srgb, var(--sage, #4f6b53) 86%, var(--ink, #161816));border-color:color-mix(in srgb, var(--sage, #4f6b53) 86%, var(--ink, #161816));} .ds-btn:focus-visible{outline:2px solid var(--sage, #4f6b53);outline-offset:3px;} .ds-btn:active{transform:translateY(1px);}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action beside the solid button (LinkedIn, Copy address).",
+      "html": "<a href=\"#\" class=\"ds-btn-outline\">LinkedIn</a>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid var(--sage, #4f6b53);border-radius:2px;font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);font-size:0.9375rem;font-weight:600;letter-spacing:0.01em;line-height:1;text-decoration:none;cursor:pointer;transition:background-color .18s cubic-bezier(0.16, 1, 0.3, 1),color .18s cubic-bezier(0.16, 1, 0.3, 1),border-color .18s cubic-bezier(0.16, 1, 0.3, 1);background:transparent;color:var(--ink, #161816);border-color:var(--hair-strong, rgba(22,24,22,0.34));} .ds-btn-outline:hover{border-color:var(--ink, #161816);} .ds-btn-outline:focus-visible{outline:2px solid var(--sage, #4f6b53);outline-offset:3px;} .ds-btn-outline:active{transform:translateY(1px);}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky paper bar: sage circle monogram (no wordmark), rule-grey links with a sage underline on the active section, and a small solid Get in touch button.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\" aria-label=\"Josh Hopkins, back to top\"><span class=\"ds-monogram\" aria-hidden=\"true\">JH</span></a><nav class=\"ds-links\"><a href=\"#\" class=\"ds-link\" aria-current=\"true\">Experience</a><a href=\"#\" class=\"ds-link\">Skills</a><a href=\"#\" class=\"ds-link\">Education</a></nav><a href=\"#\" class=\"ds-nav-btn\">Get in touch</a></header>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:28px;height:60px;padding:0 24px;background:var(--paper, #f4f4f1);border-bottom:1px solid var(--hair, rgba(22,24,22,0.16));font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);} .ds-brand{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin-right:auto;color:var(--ink, #161816);text-decoration:none;} .ds-monogram{display:grid;place-items:center;width:38px;height:38px;flex:none;border-radius:50%;background:var(--sage, #4f6b53);color:var(--paper, #f4f4f1);font-size:0.875rem;font-weight:700;font-variation-settings:'wdth' 88;letter-spacing:0.06em;line-height:1;} .ds-wordmark{white-space:nowrap;font-weight:600;font-size:1rem;font-variation-settings:'wdth' 88;letter-spacing:0.005em;} .ds-links{display:flex;gap:4px;} .ds-link{position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0 10px;color:var(--rule, #5d635d);font-size:0.9375rem;font-weight:500;text-decoration:none;transition:color .18s cubic-bezier(0.16, 1, 0.3, 1);} .ds-link:hover,.ds-link[aria-current=true]{color:var(--ink, #161816);} .ds-link[aria-current=true]::after{content:'';position:absolute;left:10px;right:10px;bottom:8px;height:2px;background:var(--sage, #4f6b53);} .ds-nav-btn{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border:1px solid var(--sage, #4f6b53);border-radius:2px;background:var(--sage, #4f6b53);color:var(--paper, #f4f4f1);font-size:0.875rem;font-weight:600;letter-spacing:0.01em;line-height:1;text-decoration:none;white-space:nowrap;transition:background-color .18s cubic-bezier(0.16, 1, 0.3, 1),border-color .18s cubic-bezier(0.16, 1, 0.3, 1);} .ds-nav-btn:hover{background:color-mix(in srgb, var(--sage, #4f6b53) 86%, var(--ink, #161816));border-color:color-mix(in srgb, var(--sage, #4f6b53) 86%, var(--ink, #161816));} .ds-link:focus-visible,.ds-nav-btn:focus-visible,.ds-brand:focus-visible{outline:2px solid var(--sage, #4f6b53);outline-offset:3px;border-radius:2px;} @media (max-width:480px){.ds-wordmark{display:none;}}"
+    },
+    {
+      "name": "Theme Switch",
+      "kind": "custom",
+      "refersTo": "theme-switch-track",
+      "description": "Pill switch (role=switch): 64x32 track with sun left and moon right; a 24px thumb slides under the active icon, paper in light, sage in dark. Owner-approved round exception.",
+      "html": "<button type=\"button\" class=\"ds-switch\" role=\"switch\" aria-checked=\"false\" aria-label=\"Dark theme\" onclick=\"this.setAttribute('aria-checked', this.getAttribute('aria-checked') !== 'true')\"><span class=\"ds-switch-track\" aria-hidden=\"true\"><span class=\"ds-switch-thumb\"></span><svg class=\"ds-switch-icon ds-switch-sun\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"></circle><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"></path></svg><svg class=\"ds-switch-icon ds-switch-moon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 14.2A8 8 0 0 1 9.8 4 6.5 6.5 0 1 0 20 14.2Z\"></path></svg></span></button>",
+      "css": ".ds-switch{display:inline-grid;place-items:center;min-width:44px;min-height:44px;padding:6px 4px;border:0;border-radius:999px;background:transparent;color:var(--ink, #161816);cursor:pointer;} .ds-switch-track{position:relative;display:flex;align-items:center;justify-content:space-between;width:64px;height:32px;padding:0 8px;box-sizing:border-box;border-radius:999px;background:color-mix(in srgb, var(--ink, #161816) 8%, var(--paper, #f4f4f1));border:1px solid var(--hair-strong, rgba(22,24,22,0.34));transition:background-color .25s cubic-bezier(0.16, 1, 0.3, 1),border-color .25s cubic-bezier(0.16, 1, 0.3, 1);} .ds-switch-thumb{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:var(--paper, #f4f4f1);box-shadow:0 1px 3px color-mix(in srgb, var(--ink, #161816) 28%, transparent);transition:transform .3s cubic-bezier(0.16, 1, 0.3, 1),background-color .25s cubic-bezier(0.16, 1, 0.3, 1);} .ds-switch-icon{position:relative;display:block;width:16px;height:16px;color:var(--rule, #5d635d);transition:color .25s cubic-bezier(0.16, 1, 0.3, 1);} .ds-switch-sun{color:var(--sage, #4f6b53);} .ds-switch:hover .ds-switch-track{border-color:var(--ink, #161816);} .ds-switch:focus-visible{outline:2px solid var(--sage, #4f6b53);outline-offset:3px;} .ds-switch[aria-checked=true] .ds-switch-track{background:color-mix(in srgb, var(--sage, #4f6b53) 22%, var(--paper, #f4f4f1));} .ds-switch[aria-checked=true] .ds-switch-thumb{transform:translateX(32px);background:var(--sage, #4f6b53);} .ds-switch[aria-checked=true] .ds-switch-sun{color:var(--rule, #5d635d);} .ds-switch[aria-checked=true] .ds-switch-moon{color:var(--paper, #f4f4f1);} @media (prefers-reduced-motion: reduce){.ds-switch-track,.ds-switch-thumb,.ds-switch-icon{transition:none;}}"
+    },
+    {
+      "name": "Role Note",
+      "kind": "chip",
+      "refersTo": "role-note",
+      "description": "Square-cut sage-outlined note marking a career event (Rejoined, Promoted).",
+      "html": "<span class=\"ds-note\">Rejoined</span>",
+      "css": ".ds-note{display:inline-block;padding:1px 7px;border:1px solid var(--sage, #4f6b53);border-radius:2px;color:var(--sage, #4f6b53);font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);font-size:0.8125rem;font-weight:600;line-height:1.5;}"
+    },
+    {
+      "name": "Colour Bar Proofs",
+      "kind": "custom",
+      "refersTo": "proof",
+      "description": "Full-bleed sage band: six-step tint wedge above the proofs, each a bold lead line plus one sentence.",
+      "html": "<section class=\"ds-bar\"><div class=\"ds-wedge\"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class=\"ds-proofs\"><div class=\"ds-proof\"><h3>Team of 9</h3><p>Lead 7 developers and 2 QA engineers, several of whom I hired.</p></div><div class=\"ds-proof\"><h3>Returned &amp; promoted</h3><p>Rejoined CPI in 2023 as a Senior Developer; promoted to Software Engineering Manager in 2025.</p></div></div></section>",
+      "css": ".ds-bar{background:var(--sage, #4f6b53);color:var(--paper, #f4f4f1);padding:24px;font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);} .ds-wedge{display:inline-flex;border:1px solid color-mix(in srgb, var(--paper, #f4f4f1) 55%, transparent);margin-bottom:24px;} .ds-wedge span{width:22px;height:12px;} .ds-wedge span:nth-child(1){background:var(--paper, #f4f4f1);} .ds-wedge span:nth-child(2){background:color-mix(in srgb, var(--paper, #f4f4f1) 80%, var(--sage, #4f6b53));} .ds-wedge span:nth-child(3){background:color-mix(in srgb, var(--paper, #f4f4f1) 60%, var(--sage, #4f6b53));} .ds-wedge span:nth-child(4){background:color-mix(in srgb, var(--paper, #f4f4f1) 40%, var(--sage, #4f6b53));} .ds-wedge span:nth-child(5){background:color-mix(in srgb, var(--paper, #f4f4f1) 20%, var(--sage, #4f6b53));} .ds-wedge span:nth-child(6){background:var(--sage, #4f6b53);} .ds-proofs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));} .ds-proof{padding:4px 28px 0;border-left:1px solid color-mix(in srgb, var(--paper, #f4f4f1) 40%, transparent);} .ds-proof:first-child{padding-left:0;border-left:0;} .ds-proof h3{margin:0;font-size:1.375rem;font-weight:650;font-variation-settings:'wdth' 82;line-height:1.15;} .ds-proof p{margin:8px 0 0;max-width:34ch;font-size:1rem;line-height:1.5;}"
+    },
+    {
+      "name": "Ledger Section",
+      "kind": "custom",
+      "description": "Section head opened by a 2px ink rule beside hairline-ruled rows with a mono date column.",
+      "html": "<section class=\"ds-section\"><div class=\"ds-head\"><h2>Experience</h2><p class=\"ds-meta\">Sep 2017 – present</p></div><ol class=\"ds-rows\"><li class=\"ds-row is-current\"><p class=\"ds-date\">May 2025 – Present</p><div><h3>Software Engineering Manager</h3><p class=\"ds-org\">CPI Group UK Ltd, Chippenham</p></div></li><li class=\"ds-row\"><p class=\"ds-date\">Feb 2023 – May 2025</p><div><h3>Senior Software Developer</h3><p class=\"ds-org\">CPI Group UK Ltd, Chippenham</p></div></li></ol></section>",
+      "css": ".ds-section{display:grid;grid-template-columns:minmax(140px,1fr) minmax(0,3.2fr);gap:16px 40px;font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);color:var(--ink, #161816);} .ds-head{border-top:2px solid var(--ink, #161816);padding-top:14px;} .ds-head h2{margin:0;font-size:1.75rem;font-weight:650;font-variation-settings:'wdth' 82;line-height:1.1;} .ds-meta{margin:8px 0 0;color:var(--rule, #5d635d);font-family:var(--mono, 'JetBrains Mono', ui-monospace, Consolas, monospace);font-size:0.8125rem;} .ds-rows{list-style:none;margin:0;padding:18px 0 0;border-top:1px solid var(--hair, rgba(22,24,22,0.16));} .ds-row{display:grid;grid-template-columns:11.5rem minmax(0,1fr);gap:4px 28px;padding:18px 0;border-bottom:1px solid var(--hair, rgba(22,24,22,0.16));} .ds-row:last-child{border-bottom:0;} .ds-date{margin:0;padding-top:5px;color:var(--rule, #5d635d);font-family:var(--mono, 'JetBrains Mono', ui-monospace, Consolas, monospace);font-size:0.8125rem;font-variant-numeric:tabular-nums;} .ds-row.is-current .ds-date{color:var(--sage, #4f6b53);font-weight:500;} .ds-row h3{margin:0;font-size:1.3125rem;font-weight:650;font-variation-settings:'wdth' 90;line-height:1.25;} .ds-row.is-current h3{font-size:1.625rem;font-variation-settings:'wdth' 84;} .ds-org{margin:4px 0 0;color:var(--rule, #5d635d);}"
+    },
+    {
+      "name": "Now Marker and Location",
+      "kind": "custom",
+      "refersTo": "now-dot",
+      "description": "Two static mono 500 markers: \"Now\" inline at the start of the role line (8px sage dot, static 3px ring at 22%), and \"Based in Wiltshire, UK\" in rule grey with a static 16px sage reticle in the hero CTA row. Owner-approved round forms; no animation.",
+      "html": "<p class=\"ds-role\"><span class=\"ds-now\"><span class=\"ds-dot\" aria-hidden=\"true\"></span>Now</span> Software Engineering Manager</p><div class=\"ds-cta\"><a href=\"#\" class=\"ds-btn\">Email me</a><span class=\"ds-loc\"><svg class=\"ds-reticle\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"6.5\"/><circle cx=\"12\" cy=\"12\" r=\"1.8\" class=\"ds-core\"/><path d=\"M12 1.5v4M12 18.5v4M1.5 12h4M18.5 12h4\"/></svg>Based in Wiltshire, UK</span></div>",
+      "css": ".ds-role{margin:0;font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);font-size:1.375rem;font-weight:600;line-height:1.3;color:var(--ink, #161816);} .ds-now,.ds-loc{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono, 'JetBrains Mono', ui-monospace, Consolas, monospace);font-size:0.8125rem;font-weight:500;} .ds-now{margin-right:0.7em;color:var(--sage, #4f6b53);vertical-align:0.25em;} .ds-dot{width:8px;height:8px;border-radius:50%;background:var(--sage, #4f6b53);box-shadow:0 0 0 3px color-mix(in srgb, var(--sage, #4f6b53) 22%, transparent);} .ds-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:24px;} .ds-btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border:1px solid var(--sage, #4f6b53);border-radius:2px;background:var(--sage, #4f6b53);color:var(--paper, #f4f4f1);font-family:var(--sans, 'Archivo', 'Helvetica Neue', Arial, sans-serif);font-size:0.9375rem;font-weight:600;line-height:1;text-decoration:none;} .ds-loc{margin-left:10px;color:var(--rule, #5d635d);} .ds-reticle{width:16px;height:16px;flex:none;fill:none;stroke:var(--sage, #4f6b53);stroke-width:1.8;} .ds-reticle .ds-core{fill:var(--sage, #4f6b53);stroke:none;}"
+    },
+    {
+      "name": "Slug Line",
+      "kind": "custom",
+      "description": "Mono metadata row at the foot of the page only; there is no slug under the hero.",
+      "html": "<p class=\"ds-slug\"><span>© 2026 Josh Hopkins</span><span>Updated <time datetime=\"2026-09\">Sep 2026</time></span><span>joshhopkins.co.uk</span></p>",
+      "css": ".ds-slug{display:flex;flex-wrap:wrap;gap:4px 22px;margin:0;color:var(--rule, #5d635d);font-family:var(--mono, 'JetBrains Mono', ui-monospace, Consolas, monospace);font-size:0.75rem;line-height:1.5;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Signed-Off Press Proof",
+    "overview": "The CV is a proof sheet from the print and manufacturing world Josh builds software for. A mono \"Now\" marker opens the role line, a mono location line sits with the contact actions, and a mono slug line at the foot of the page carries the copyright, the update date and the domain. A full-bleed sage colour bar, with a stepped tint wedge, carries the three proofs. The page closes on a sign-off block ruled in ink, not a generic footer. Every device is borrowed from press work, and each one holds real content.\n\nDensity is calm and editorial. One variable sans, Archivo, carries all hierarchy through its width axis, from a condensed display name down to full-width body text. JetBrains Mono is reserved for metadata. The palette is exactly four tones per theme. Surfaces are flat: rules and hairlines divide the sheet, and the only mass of colour is the sage bar. There is no load motion. The page is complete from the first frame. Ambient motion is limited to the colour-bar mesh, which drifts steadily at rest while a slow ghost focus wanders across the bar, lighting the links near it (a hint that it is interactive), and wakes further when a pointer takes over. The \"Now\" dot and the location reticle are still, so nothing in the hero implies live data.\n\nThe world rejects the category default for a developer CV: a centred hero, pill tags, equal-weight skill cards and a \"Let's talk\" footer.",
+    "keyCharacteristics": [
+      "Four tones per theme. Every other value is an alpha or `color-mix` of those four.",
+      "One sans family whose width axis sets the hierarchy (72 for the name, 100 for body text).",
+      "Mono only for dates, years, \"Now\", \"Based in Wiltshire, UK\", the footer slug line and the revealed email address.",
+      "2px square-cut corners, with four owner-approved round exceptions: the sage monogram, the theme switch, the \"Now\" dot and the location reticle.",
+      "A single full-bleed sage band that carries the proofs.",
+      "A two-column ledger: a section head on the left and ruled body rows on the right."
+    ],
+    "rules": [
+      {
+        "name": "The Four Tones Rule",
+        "body": "Each theme has exactly four tones: paper, ink, rule and sage. Any other colour on the page must be an alpha or `color-mix` of those four. If a new colour cannot be expressed as a mix of the four, it does not belong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sage Is Signal Rule",
+        "body": "Sage marks only four things: action (the solid buttons and focus), currency (the active nav link, the \"Now\" marker, the location reticle, the current role, the role notes, the active theme on the switch), proof (the colour bar) and identity (the monogram). It is never used for decorative fills, backgrounds of cards, or body text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Is Hierarchy Rule",
+        "body": "Hierarchy comes from Archivo's width axis as much as its size: 72 for the name, 76 to 90 for headings, 100 for reading text. Do not add a second display family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Mono Is Metadata Rule",
+        "body": "JetBrains Mono sets only dates, years, \"Now\", \"Based in Wiltshire, UK\", the footer slug line and the email address. Headings, labels and prose are never set in mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Set Measure Rule",
+        "body": "Every text block has a set line length: 68ch for prose, role lists and skills; 62ch for the positioning line; 40ch for the sign-off copy; 34ch for the proof sentences.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Nothing on the sheet casts a shadow or floats, except the theme-switch thumb. Separate things with a rule or a hairline. Emphasise with the sage bar or with type weight and width.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Few Round Things Rule",
+        "body": "Only the monogram, the theme switch, the \"Now\" dot and the location reticle are round. Everything else is cut at 2px: no pill tags, pill buttons, rounded cards or larger radii.",
+        "section": "shapes"
+      },
+      {
+        "name": "The One Moment Rule",
+        "body": "The colour-bar mesh is the one ambient moment: it drifts with a wandering ghost focus at rest, wakes under the pointer and settles back. Nothing else moves on its own: the \"Now\" dot and the location reticle are static, so the page never implies live data. There is no load motion and there are no scroll reveals; the layout is complete from the first frame. Everything else that moves is a state change: the 0.18s colour transitions on buttons and links, the 1px button press, and the theme-switch slide. All of it is suppressed under `prefers-reduced-motion`, where the mesh is drawn once and stays still.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do express every non-token colour as an alpha or `color-mix` of paper, ink, rule and sage.",
+      "Do set hierarchy with Archivo's width axis: 72 for the name, 76–90 for headings, 100 for reading text.",
+      "Do give every text block a max-width: 68ch, 62ch, 40ch or 34ch.",
+      "Do divide content with 1px hairlines (ink at 16%) and open sections with a 2px ink rule.",
+      "Do keep corners at 2px (the monogram, the theme switch, the \"Now\" dot and the location reticle are the only round forms) and every interactive target at 44px or more.",
+      "Do put dates, years and metadata in JetBrains Mono, with tabular figures where they align.",
+      "Do mirror every token in the dark theme and in the print overrides."
+    ],
+    "donts": [
+      "Don't add a fifth tone, a second accent or a second display family.",
+      "Don't use shadows, glows or floating cards. The sheet is flat; the theme-switch thumb's small shadow is the only one.",
+      "Don't use pill-shaped tags or equal-weight skill cards. Skills are ledger rows.",
+      "Don't round anything beyond the monogram, the theme switch, the \"Now\" dot and the location reticle.",
+      "Don't add load animations or scroll reveals. The colour-bar mesh is the only ambient motion; the \"Now\" dot and the location reticle never animate.",
+      "Don't set headings or prose in mono, or use sage for body text or decorative fills."
+    ]
+  }
+}

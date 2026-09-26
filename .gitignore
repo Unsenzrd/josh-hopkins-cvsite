@@ -2,3 +2,9 @@ node_modules/
 .DS_Store
 Thumbs.db
 .netlify/
+
+# Impeccable local working files
+.impeccable/review/
+.impeccable/hook.cache.json
+.impeccable/live/
+.impeccable/questions/

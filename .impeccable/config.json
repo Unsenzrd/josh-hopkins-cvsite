@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "site/index.html"
+        ],
+        "createdAt": "2026-09-26T10:17:39.639Z",
+        "reason": "Claude + independent finish reviewer: .proof uses 1px hairline column dividers (28px side padding; mobile border-top rule with 12px top padding), not bordered containers"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "site/index.html"
+        ],
+        "createdAt": "2026-09-26T10:44:11.435Z",
+        "reason": "Claude: live-page audit found no 0.12x leading; all sub-1.3 values are single-line display type, headings or button labels, and every multi-line text block is 1.5-1.6"
+      }
+    ]
+  }
+}

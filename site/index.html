@@ -1,254 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Josh Hopkins — Engineering Leader &amp; Hands-on Software Engineer</title>
-<meta name="description" content="Josh Hopkins — Engineering leader and hands-on software engineer at CPI Group UK Ltd, shaping AI strategy within software engineering teams. 10+ years across manufacturing and enterprise systems.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=6">
+<title>Josh Hopkins — Software Engineering Manager</title>
+<meta name="description" content="Josh Hopkins, Software Engineering Manager at CPI Group UK. I currently lead a team of 7 developers and 2 QA engineers, stay hands-on in C#/.NET, and lead the team's adoption of AI in engineering.">
+<meta name="theme-color" content="#f4f4f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141614" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://joshhopkins.co.uk/">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://joshhopkins.co.uk/">
+<meta property="og:title" content="Josh Hopkins — Software Engineering Manager">
+<meta property="og:description" content="Software Engineering Manager at CPI Group UK. Currently leads a team of 7 developers and 2 QA engineers and stays hands-on in C#/.NET.">
+<meta property="og:image" content="https://joshhopkins.co.uk/assets/img/portrait.jpg">
+<meta property="og:image:alt" content="Portrait of Josh Hopkins">
+<meta name="twitter:card" content="summary">
+<script>
+  // Set the theme before first paint so the page never flashes the wrong one.
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("jhcv-theme"); } catch (e) {}
+    if (t === "onyx") t = "dark";
+    if (t === "ivory") t = "light";
+    if (t !== "dark" && t !== "light") {
+      t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css?v=22">
 </head>
 <body>
 
-<div id="texture" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="#top" class="brand">
-      <span class="monogram">JH</span>
-      <span class="wordmark">JOSH&nbsp;HOPKINS</span>
+    <a href="#top" class="brand" aria-label="Josh Hopkins, back to top">
+      <span class="monogram" aria-hidden="true">JH</span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Sections">
       <a href="#experience" class="nav-link">Experience</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#education" class="nav-link">Education</a>
-      <a href="#contact" class="nav-link">Contact</a>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <svg data-icon="moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.2A8 8 0 0 1 9.8 4 6.5 6.5 0 1 0 20 14.2Z"></path></svg>
-        <svg data-icon="sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" hidden><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
-      </button>
-      <a href="#contact" class="btn btn-solid btn-small">Get&nbsp;in&nbsp;Touch</a>
     </nav>
+    <div class="nav-actions">
+      <button type="button" class="theme-switch" id="theme-toggle" role="switch" aria-checked="false" aria-label="Dark theme">
+        <span class="switch-track" aria-hidden="true">
+          <span class="switch-thumb"></span>
+          <svg class="switch-icon switch-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+          <svg class="switch-icon switch-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 14.2A8 8 0 0 1 9.8 4 6.5 6.5 0 1 0 20 14.2Z"></path></svg>
+        </span>
+      </button>
+      <a href="#contact" class="btn btn-solid btn-small">Get&nbsp;in&nbsp;touch</a>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
-  <section id="top" class="hero">
-    <div class="hero-copy">
-      <div class="eyebrow" data-reveal>
-        <span class="eyebrow-rule"></span>
-        <span>Engineering Leader · Hands-on Software Engineer</span>
+  <section id="top" class="hero" aria-labelledby="hero-name">
+    <div class="sheet">
+      <div class="hero-copy">
+        <h1 id="hero-name">Josh Hopkins</h1>
+        <p class="role"><span class="role-status"><span class="role-dot" aria-hidden="true"></span>Now</span> Software Engineering Manager <span class="role-sep" aria-hidden="true">·</span> <span class="role-company">CPI&nbsp;Group&nbsp;UK</span></p>
+        <p class="positioning">Engineering leader and hands-on software engineer with nearly a decade across manufacturing and enterprise systems — specialising in back-end development, with well-rounded full-stack skills across the full software development lifecycle.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-solid js-email">Email&nbsp;me</a>
+          <a href="https://www.linkedin.com/in/jmhopkins-dev/" class="btn btn-outline" rel="me noopener" target="_blank">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
+          <span class="role-loc"><svg class="reticle" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="1.8" class="reticle-core"/><path d="M12 1.5v4M12 18.5v4M1.5 12h4M18.5 12h4"/></svg>Based in Wiltshire, UK</span>
+        </div>
       </div>
-
-      <h1 data-reveal>Josh Hopkins</h1>
-
-      <p class="lede" data-reveal>Engineering leader and hands-on software engineer with 10+ years across manufacturing and enterprise systems — specialising in back-end development, with well-rounded full-stack skills across the full software development lifecycle.</p>
+      <div class="portrait">
+        <img src="assets/img/portrait.jpg" alt="Portrait of Josh Hopkins" width="560" height="560" decoding="async" fetchpriority="high">
+      </div>
     </div>
+  </section>
 
-    <div class="hero-stripe" aria-hidden="true">
+  <section class="colour-bar" aria-labelledby="proof-heading">
+    <div class="bar-mesh" aria-hidden="true">
       <canvas class="stripe-mesh"></canvas>
-    </div>
-
-    <div class="hero-actions">
-      <div class="pills" data-reveal>
-        <span class="pill">Wiltshire, UK</span>
-        <span class="pill">C# / .NET stack</span>
-        <span class="pill">AI-assisted engineering</span>
-        <span class="pill">10+ years' experience</span>
-      </div>
-
-      <div class="cta-row" data-reveal>
-        <a href="#contact" class="btn btn-solid">Contact&nbsp;Me</a>
-        <a href="#experience" class="btn btn-outline">View&nbsp;Experience</a>
+      <div class="wedge">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
-
-    <div class="hero-portrait" data-reveal>
-      <div class="portrait-frame" data-tilt="10">
-        <div class="portrait-inner">
-          <img src="assets/img/portrait.jpg" alt="Josh Hopkins" width="300" height="300">
-        </div>
+    <div class="proofs">
+      <h2 id="proof-heading" class="visually-hidden">Highlights</h2>
+      <div class="proof">
+        <h3>Engineering leadership</h3>
+        <p>I currently lead 7 developers and 2 QA engineers, several of whom I hired.</p>
+      </div>
+      <div class="proof">
+        <h3>AI adoption</h3>
+        <p>Took GitHub Copilot to 100% of the team. Pull request throughput roughly doubled in the month after we reworked our workflows.</p>
+      </div>
+      <div class="proof">
+        <h3>Trusted to step up</h3>
+        <p>Rejoined CPI in 2023 as a Senior Developer; promoted to Software Engineering Manager in 2025.</p>
       </div>
     </div>
   </section>
 
-  <section class="row-section">
-    <div class="label-row" data-reveal>
-      <div class="label">Summary</div>
-      <div class="summary-text">
-        <p>I currently lead a development and QA team of around ten, staying hands-on in engineering solutions from design through to delivery while balancing technical judgement with coaching and planning. I also shape how AI is adopted in software engineering: choosing the tools, setting the guardrails and reworking our workflows so the team delivers solutions with increased efficiency.</p>
-        <p>My core stack is C#, ASP.NET Core/MVC, REST &amp; SOAP APIs and SQL, with working knowledge of JavaScript/TypeScript, Node.js and AWS.</p>
-      </div>
+  <section id="summary" class="section" aria-labelledby="summary-heading">
+    <div class="section-head">
+      <h2 id="summary-heading">Summary</h2>
+    </div>
+    <div class="section-body prose">
+      <p>I currently lead a team of seven developers and two QA engineers at CPI, and I stay hands-on in design and delivery. I also decide how the team uses AI: which tools we use, the guardrails around them, and how our development and QA workflows change as a result.</p>
+      <p>Most of my work is in C#, ASP.NET Core, REST and SOAP APIs, and SQL. I also have working knowledge of TypeScript, Node.js and AWS.</p>
     </div>
   </section>
 
-  <section id="experience" class="row-section">
-    <div class="label-row heading-row" data-reveal>
-      <div class="label">Experience</div>
-      <h2>10+ years engineering software and leading teams</h2>
+  <section id="experience" class="section" aria-labelledby="experience-heading">
+    <div class="section-head">
+      <h2 id="experience-heading">Experience</h2>
+      <p class="section-meta">Sep 2017 – present</p>
     </div>
+    <div class="section-body">
+      <ol class="roles">
 
-    <div class="content-grid">
-      <div class="spacer"></div>
-      <div class="timeline">
-
-        <article class="timeline-item" data-reveal>
-          <span class="timeline-dot timeline-dot-current"></span>
-          <div class="timeline-head">
-            <h3>Software Engineering Manager</h3>
-            <span class="timeline-date">2023 — Present</span>
+        <li class="role-entry is-current" id="cpi-manager">
+          <p class="role-dates"><time datetime="2025-05">May 2025</time> – Present</p>
+          <div class="role-main">
+            <h3><a href="#cpi-manager">Software Engineering Manager</a></h3>
+            <p class="role-org">CPI Group UK Ltd, Chippenham</p>
+            <ul>
+              <li>Currently lead a team of 7 developers and 2 QA engineers delivering software for print and manufacturing operations. I hired several of the team.</li>
+              <li>Led GitHub Copilot adoption to 100% of the team, and set guardrails for responsible AI use: review expectations, data handling and IP.</li>
+              <li>Reworked development and QA workflows around AI assistance. Pull request throughput roughly doubled against the previous month.</li>
+              <li>Scope work with the PMO, from single-line changes to full system designs, and stay hands-on through delivery.</li>
+              <li>Coach engineers on AI fluency, coding standards and our git branching strategy.</li>
+            </ul>
           </div>
-          <div class="timeline-org">CPI Group UK Ltd (Print / Manufacturing), Chippenham · previously Senior Software Developer</div>
-          <ul>
-            <li>Lead a team of developers and QA engineers delivering quality software for an ever-changing business.</li>
-            <li>Cooperate with the PMO to define project scope, from single-line changes to full systems design.</li>
-            <li>Coach junior developers and help shape coding standards and git branching strategy.</li>
-            <li>Manage large, complex projects for both internal and external clients.</li>
-            <li>Shape AI strategy for a team of ~10: drove adoption of GitHub Copilot across the team, with usage growing steadily.</li>
-            <li>Defined guardrails for responsible AI use — review expectations, data handling and IP considerations.</li>
-            <li>Reworked development and QA workflows around AI assistance, speeding up time to PR and delivering solutions with increased efficiency.</li>
-            <li>Coach engineers to build AI fluency through hands-on sessions and day-to-day mentoring.</li>
-          </ul>
-        </article>
+        </li>
 
-        <article class="timeline-item" data-reveal>
-          <span class="timeline-dot"></span>
-          <div class="timeline-head">
-            <h3>Enterprise Application Developer</h3>
-            <span class="timeline-date">03/2022 — 03/2023</span>
+        <li class="role-entry" id="cpi-senior">
+          <p class="role-dates"><time datetime="2023-02">Feb 2023</time> – <time datetime="2025-05">May 2025</time></p>
+          <div class="role-main">
+            <h3><a href="#cpi-senior">Senior Software Developer</a></h3>
+            <p class="role-org">CPI Group UK Ltd, Chippenham <span class="role-note">Rejoined</span></p>
+            <ul>
+              <li>Rejoined CPI to lead large, complex projects for internal and external clients.</li>
+              <li>Coached junior developers and helped write the team's coding standards and git branching strategy.</li>
+              <li>Promoted to Software Engineering Manager in May 2025.</li>
+            </ul>
           </div>
-          <div class="timeline-org">Herman Miller Ltd (MillerKnoll), Portal Mill, Melksham</div>
-          <ul>
-            <li>Worked with an international team delivering projects, enhancements and critical bugfixes.</li>
-            <li>Modernised legacy codebases, upgrading to newer frameworks for efficiency.</li>
-            <li>Built integrations between third-party software and a centralised ERP system.</li>
-            <li>Developed an EDI process and surrounding software for third-party integration.</li>
-          </ul>
-        </article>
+        </li>
 
-        <article class="timeline-item" data-reveal>
-          <span class="timeline-dot"></span>
-          <div class="timeline-head">
-            <h3>Software Developer / Senior Software Developer</h3>
-            <span class="timeline-date">10/2018 — 03/2022</span>
+        <li class="role-entry" id="herman-miller">
+          <p class="role-dates"><time datetime="2022-03">Mar 2022</time> – <time datetime="2023-02">Feb 2023</time></p>
+          <div class="role-main">
+            <h3><a href="#herman-miller">Enterprise Application Developer</a></h3>
+            <p class="role-org">Herman Miller (MillerKnoll), Melksham</p>
+            <ul>
+              <li>Delivered projects, enhancements and critical fixes with an international development team.</li>
+              <li>Built integrations between third-party software and a central ERP system, including an EDI process.</li>
+              <li>Modernised legacy codebases and moved them onto newer frameworks.</li>
+            </ul>
           </div>
-          <div class="timeline-org">CPI Group UK Ltd (Print / Manufacturing), Chippenham</div>
-          <ul>
-            <li>Refactored legacy systems for robustness and efficiency, lifting performance across the codebase.</li>
-            <li>Served as Scrum Master for 12 months during the team's Agile transition, running ceremonies across multiple sites.</li>
-            <li>Designed innovative solutions to manufacturing problems, improving process performance.</li>
-            <li>Wrote a cross-platform Shop Floor Data Capture console application used across multiple countries and systems.</li>
-          </ul>
-        </article>
+        </li>
 
-        <article class="timeline-item" data-reveal>
-          <span class="timeline-dot"></span>
-          <div class="timeline-head">
-            <h3>Software Developer</h3>
-            <span class="timeline-date">09/2017 — 10/2018</span>
+        <li class="role-entry" id="cpi-developer">
+          <p class="role-dates"><time datetime="2018-10">Oct 2018</time> – <time datetime="2022-03">Mar 2022</time></p>
+          <div class="role-main">
+            <h3><a href="#cpi-developer">Senior Software Developer · .NET Developer</a></h3>
+            <p class="role-org">CPI Group UK Ltd, Chippenham <span class="role-note">Promoted to Senior, Apr 2021</span></p>
+            <ul>
+              <li>Built a cross-platform Shop Floor Data Capture console app, designed to run across different factory systems and now in use at UK sites. It made data capture faster and more accurate, with built-in redundancy for availability.</li>
+              <li>Scrum Master for 12 months during the team's Agile transition. I ran all the ceremonies and worked with product owners across multiple sites.</li>
+              <li>Refactored legacy systems for robustness and performance, which streamlined factory processes.</li>
+            </ul>
           </div>
-          <div class="timeline-org">InTouch Display Ltd, Highbridge</div>
-          <ul>
-            <li>Developed in-house software and supported critical bug fixes and field deployments.</li>
-            <li>Built a monitoring tool to catch and report critical process failures quickly.</li>
-            <li>Provided technical support to clients and internal teams; handled GDPR compliance analysis.</li>
-          </ul>
-        </article>
+        </li>
 
-      </div>
+        <li class="role-entry" id="intouch">
+          <p class="role-dates"><time datetime="2017-09">Sep 2017</time> – <time datetime="2018-10">Oct 2018</time></p>
+          <div class="role-main">
+            <h3><a href="#intouch">Software Developer</a></h3>
+            <p class="role-org">InTouch Display Ltd, Highbridge</p>
+            <ul>
+              <li>Developed in-house software, and fixed critical bugs and deployed to field systems.</li>
+              <li>Built a monitoring tool so critical process failures were reported and fixed quickly.</li>
+              <li>Handled requirements gathering, client support and GDPR compliance analysis.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
     </div>
   </section>
 
-  <section id="skills" class="row-section">
-    <div class="label-row heading-row" data-reveal>
-      <div class="label">Skills</div>
-      <h2>Technical range, delivery discipline, AI fluency</h2>
+  <section id="skills" class="section" aria-labelledby="skills-heading">
+    <div class="section-head">
+      <h2 id="skills-heading">Skills</h2>
     </div>
-
-    <div class="content-grid">
-      <div class="spacer"></div>
-      <div class="skills-cards">
-        <div class="skill-card" data-reveal data-tilt="7">
-          <div class="skill-card-title">Core &amp; Backend</div>
-          <div class="skill-card-list">C#<br>ASP.NET Core / MVC<br>REST &amp; SOAP APIs<br>VB.NET · SQL</div>
+    <div class="section-body">
+      <dl class="skills">
+        <div>
+          <dt>Core</dt>
+          <dd>C#, ASP.NET Core / MVC, .NET (up to .NET 10), REST &amp; SOAP APIs, SQL, VB.NET</dd>
         </div>
-        <div class="skill-card" data-reveal data-tilt="7">
-          <div class="skill-card-title">Web &amp; Cloud</div>
-          <div class="skill-card-list">JavaScript / TypeScript<br>Node.js · HTML / CSS<br>AWS (Lambda, API Gateway, SQS/SNS)</div>
+        <div>
+          <dt>Also</dt>
+          <dd>TypeScript / JavaScript, Node.js, HTML / CSS, AWS (Lambda, API Gateway, SQS/SNS)</dd>
         </div>
-        <div class="skill-card" data-reveal data-tilt="7">
-          <div class="skill-card-title">Practice &amp; Tools</div>
-          <div class="skill-card-list">Git · Postman<br>Jira / Confluence<br>Agile / Scrum</div>
+        <div>
+          <dt>AI &amp; practice</dt>
+          <dd>GitHub Copilot, Claude, ChatGPT; AI-assisted development and QA; Git, Postman, Jira / Confluence, Agile / Scrum</dd>
         </div>
-        <div class="skill-card" data-reveal data-tilt="7">
-          <div class="skill-card-title">AI &amp; Engineering Practice</div>
-          <div class="skill-card-list">GitHub Copilot · Claude · ChatGPT<br>AI-assisted dev &amp; QA workflows<br>AI adoption &amp; guardrails</div>
-        </div>
-      </div>
-
-      <div class="spacer"></div>
-      <div class="badges" data-reveal>
-        <span class="badge">Engineering leader</span>
-        <span class="badge">Strong decision maker</span>
-        <span class="badge">Complex problem solver</span>
-        <span class="badge">Results-driven</span>
-        <span class="badge">Creative thinker</span>
-        <span class="badge">Innovative</span>
-        <span class="badge">Personable</span>
-      </div>
+      </dl>
     </div>
   </section>
 
-  <section id="education" class="row-section">
-    <div class="label-row heading-row" data-reveal>
-      <div class="label">Education</div>
-      <h2>Applied Computing, from BTEC to BSc</h2>
+  <section id="education" class="section" aria-labelledby="education-heading">
+    <div class="section-head">
+      <h2 id="education-heading">Education</h2>
     </div>
-
-    <div class="content-grid">
-      <div class="spacer"></div>
-      <div class="edu-cards">
-        <div class="edu-card" data-reveal>
-          <div class="edu-year">2013</div>
-          <div class="edu-degree">BSc (Hons), Applied Computing</div>
-          <div class="edu-school">Bournemouth University</div>
-        </div>
-        <div class="edu-card" data-reveal>
-          <div class="edu-year">2012</div>
-          <div class="edu-degree">HND, Applied Computing</div>
-          <div class="edu-school">Bridgwater College</div>
-        </div>
-        <div class="edu-card" data-reveal>
-          <div class="edu-year">2010</div>
-          <div class="edu-degree">BTEC National Diploma L3, Applied Computing</div>
-          <div class="edu-school">Bridgwater College</div>
-        </div>
-      </div>
-      <div class="spacer"></div>
-      <p class="edu-footnote" data-reveal>Currently enrolled in ongoing courses on Udemy and elsewhere to keep skills current. Outside work: family, hiking, reading, photography and art.</p>
+    <div class="section-body">
+      <ol class="education">
+        <li><span class="edu-year">2013</span><span class="edu-degree">BSc (Hons), Applied Computing</span><span class="edu-school">Bournemouth University</span></li>
+        <li><span class="edu-year">2012</span><span class="edu-degree">HND, Applied Computing</span><span class="edu-school">Bridgwater College</span></li>
+        <li><span class="edu-year">2010</span><span class="edu-degree">BTEC National Diploma L3, Applied Computing</span><span class="edu-school">Bridgwater College</span></li>
+      </ol>
+      <p class="footnote">I keep learning through Udemy and other courses. Outside work: family, hiking, reading, photography and art.</p>
     </div>
   </section>
 
 </main>
 
-<footer id="contact" class="contact-section">
-  <div class="contact-panel" data-tilt="2.5">
-    <div>
-      <div class="label">Contact</div>
-      <h2>Let's talk.</h2>
-      <div class="contact-location">Wiltshire, UK</div>
+<footer id="contact" class="signoff" aria-labelledby="contact-heading">
+  <div class="signoff-box">
+    <div class="signoff-copy">
+      <h2 id="contact-heading">Get in touch</h2>
+      <p>Based in Wiltshire, UK. Email is the quickest way to reach me.</p>
     </div>
-    <div class="contact-actions">
-      <button type="button" class="btn btn-accent" id="email-me">Email&nbsp;Me</button>
-      <div class="monogram monogram-small">JH</div>
+    <div class="signoff-actions">
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-solid js-email" id="email-me">Email&nbsp;me</a>
+        <a href="https://www.linkedin.com/in/jmhopkins-dev/" class="btn btn-outline" rel="me noopener" target="_blank">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+      <div class="email-reveal" id="email-reveal" hidden>
+        <p class="email-line"><span class="email-address" id="email-address"></span>
+          <button type="button" class="btn btn-outline btn-small" id="email-copy">Copy address</button></p>
+        <p class="email-help" id="email-status" role="status">If your email app didn't open, copy the address and email me directly.</p>
+      </div>
     </div>
   </div>
-  <div class="copyright">© 2026 Josh Hopkins</div>
+  <p class="slug"><span>© 2026 Josh Hopkins</span> <span>Updated <time datetime="2026-09">Sep 2026</time></span> <span>joshhopkins.co.uk</span></p>
 </footer>
 
-<script src="assets/js/main.js?v=5"></script>
+<script src="assets/js/main.js?v=9"></script>
 </body>
 </html>
